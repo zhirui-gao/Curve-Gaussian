@@ -41,7 +41,7 @@ Feel free to contact me (gzrer2018@gmail.com) or open an issue if you have any q
 You may also be interested in our other works:
 - [**[ICCV 2025] PartGS**](https://github.com/zhirui-gao/PartGS):  A self-supervised part-aware reconstruction framework that integrates 2D Gaussians and superquadrics to parse objects and scenes into an interpretable decomposition.
 
-- [**[TCSVT 2025] PartGS**](https://github.com/zhirui-gao/PoseProbe): A novel approach of utilizing everyday objects commonly found in both images and real life, as pose probes, to tackle few-view NeRF reconstruction using only 3 to 6 unposed scene images.
+- [**[TCSVT 2025] PoseProbe**](https://github.com/zhirui-gao/PoseProbe): A novel approach of utilizing everyday objects commonly found in both images and real life, as pose probes, to tackle few-view NeRF reconstruction using only 3 to 6 unposed scene images.
 
 
 - [**[CVMJ 2024] DeepTm**](https://github.com/zhirui-gao/Deep-Template-Matching): An accurate template matching method based on differentiable coarse-to-fine correspondence refinement, especially designed for planar industrial parts.
@@ -51,7 +51,7 @@ You may also be interested in our other works:
 
 
 ## 📢 News
-- **2024-06-27**: The paper is available on arXiv.
+- **2025-06-27**: The paper is available on arXiv.
 - **2025-06-26**: CurveGaussian is accepted to ICCV 2025.
 
 
@@ -71,28 +71,22 @@ You may also be interested in our other works:
 
 ABC-NEF Dataset
 
-<div style="display: flex; gap: 10px;">
-  <video width="50%" autoplay loop muted>
-    <source src="./assets/room2.mp4" type="video/mp4">
-  </video>
-  <video width="50%" autoplay loop muted>
-    <source src="./assets/room3.mp4" type="video/mp4">
-  </video>
-</div>
+<p align="center">
+    <img width="" alt="romm0" src="./assets/room1.gif", style="width: 80%;">
+    <img width="" alt="romm1" src="./assets/room2.gif", style="width: 80%;">
+</p>
+
 
 Replica Dataset 
-<div style="text-align: center;">
-  <video width="100%" autoplay loop muted>
-    <source src="./assets/00000952_comparison.mp4" type="video/mp4">
-  </video>
 
-</div>
+<p align="center">
+    <img width="" alt="room2" src="./assets/00007025_comparison.gif", style="width: 90%;">
 
-<div style="text-align: center;">
-  <video width="100%" autoplay loop muted>
-    <source src="./assets/00007025_comparison.mp4" type="video/mp4">
-  </video>
-</div>
+</p>
+
+<p align="center">
+    <img width="" alt="2" src="./assets/00009016_comparison.gif", style="width: 90%;">
+</p>
 
 
 ## 🚀 Usage
