@@ -1,6 +1,6 @@
 # [ICCV 2025] CurveGaussian
 
-<h4 align="center">
+<h2 align="center">
 
 Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
 
@@ -15,7 +15,9 @@ Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
 </p>
 
 <p align="center">
-CurveGaussian enables compact 3D parametric <br>curve reconstruction from multi-view 2D edge maps.  
+<span style="font-size: 16px">
+CurveGaussian enables compact 3D parametric curve reconstruction from multi-view 2D edge maps.  
+</span>
 </p>
 
 
