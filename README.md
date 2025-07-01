@@ -69,7 +69,16 @@ You may also be interested in our other works:
 
 ## 👀 Visual Results
 
-ABC-NEF Dataset
+
+### ABC-NEF Dataset
+<p align="center">
+    <img width="" alt="room2" src="./assets/00007025_comparison.gif" style="width: 90%;">
+    <img width="" alt="2" src="./assets/00008100_comparison.gif", style="width: 90%;">
+    <img width="" alt="2" src="./assets/00000952_comparison.gif", style="width: 90%;">
+
+</p>
+
+### Replica Dataset 
 
 <p align="center">
     <img width="" alt="romm0" src="./assets/room1.gif", style="width: 80%;">
@@ -77,16 +86,8 @@ ABC-NEF Dataset
 </p>
 
 
-Replica Dataset 
 
-<p align="center">
-    <img width="" alt="room2" src="./assets/00007025_comparison.gif", style="width: 90%;">
 
-</p>
-
-<p align="center">
-    <img width="" alt="2" src="./assets/00009016_comparison.gif", style="width: 90%;">
-</p>
 
 
 ## 🚀 Usage
@@ -96,9 +97,9 @@ Replica Dataset
 ## 📚 Citation
 If you find our work helpful, please consider citing:
 ```bibtex
-@misc{yi2025curveawaregaussiansplatting3d,
+@misc{gao2025curveawaregaussiansplatting3d,
       title={Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction}, 
-      author={Zhirui Gao. Renjiao Yi and Yaqiao Dai and Xuening Zhu and Wei Chen and Chenyang Zhu and Kai Xu},
+      author={Zhirui Gao and Renjiao Yi and Yaqiao Dai and Xuening Zhu and Wei Chen and Chenyang Zhu and Kai Xu},
       year={2025},
       eprint={2506.21401},
       archivePrefix={arXiv},
