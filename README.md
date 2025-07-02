@@ -7,8 +7,8 @@ Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
 [Zhirui Gao](https://scholar.google.com/citations?user=IqtwGzYAAAAJ&hl=zh-CN), [Renjiao Yi](https://renjiaoyi.github.io/), Yaqiao Dai, Xuening Zhu, [Wei Chen](https://openreview.net/profile?id=~Wei_Chen35),  [Chenyang Zhu](https://www.zhuchenyang.net/), [Kai Xu](https://kevinkaixu.net/)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2402.04717-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2506.21401)
-[![Project page](https://img.shields.io/badge/Project-Page-brightgreen)](https://arxiv.org/abs/2506.21401)
-[![Dataset](https://img.shields.io/badge/HF-Dataset-yellow)](https://arxiv.org/abs/2506.21401)
+[![Project page](https://img.shields.io/badge/Project-Page-brightgreen)](https://zhirui-gao.github.io/CurveGaussian/)
+[![Dataset](https://img.shields.io/badge/HF-Dataset-yellow)](https://zhirui-gao.github.io/CurveGaussian/)
 
 <p>
     <img width="" alt="romm0" src="./assets/room0.gif", style="width: 80%;">
