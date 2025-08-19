@@ -54,19 +54,133 @@ You may also be interested in our other works:
 
 ## 📢 News
 - **2025-06-27**: The paper is available on arXiv.
-- **2025-06-26**: CurveGaussian is accepted to ICCV 2025.
+- **2025-06-26**: CurveGaussian is accepted to ICCV 2025. 🎉
 
 
 ## 📋 TODO
 
-- [ ] Release the training and evaluation code.
+- [-] Release the training and evaluation code.
+- [-] Evaluation and visulization code.
+- [] Custom dataset support.
 
 
 ## 🔧 Installation
 
+```
+git clone --recurse-submodules https://github.com/zhirui-gao/Curve-Gaussian.git
+```
+Our code environment list similar to 3DGS
+
+We make a custom rasterization libariry(diff-cur-rasterization) based on orginal [diff-gaussian-rasterization](https://github.com/graphdeco-inria/gaussian-splatting).
+
+If you have a environment for 3DGS, you just run
+```
+pip install  submodules/diff-cur-rasterization
+```
+Otherwise, you sholud creat a new conda environment:
+
+```
+conda env create --file environment.yml
+conda activate gaussian_splatting
+```
+
+
+
+
 
 
 ## 📊 Dataset
+
+We use the dataset provided by [EMAP](https://github.com/cvg/EMAP/blob/main/scripts/download_data.py).
+
+Download datasets:
+```
+python scripts/download_data.py 
+```
+
+
+The data is organized as follows:
+```
+<scan_id>
+|-- meta_data.json      # camera parameters
+|-- color               # images for each view
+    |-- 0_colors.png
+    |-- 1_colors.png
+    ...
+|-- edge_DexiNed        # edge maps extracted from DexiNed
+    |-- 0_colors.png
+    |-- 1_colors.png
+    ...
+|-- edge_PidiNet        # edge maps extracted from PidiNet
+    |-- 0_colors.png
+    |-- 1_colors.png
+    ...
+```
+
+## 🚀 Training 
+
+### ABC-dataset
+
+Run a single dataset
+
+```
+python train.py -s /media/gzr/ABC-NEF_Edge/data/00000168 -m output/00000168  -r 2 --eval  --quiet
+```
+
+Run the whole dataset
+
+```
+python scripts/run_batch_ABC.py
+```
+
+### Replicat-dataset
+
+set arguments/__init__.py
+```
+self.detector = 'PidiNet'  
+```
+
+```
+bash scripts/run_replica.sh
+```
+
+
+## 👊 Evaluation
+
+### ABC-dataset
+```
+python edge_extraction/eval_ABC.py
+```
+
+If you want to render a continuous video of parametric curve:
+
+First download [camera poses files](https://drive.google.com/file/d/1izmZaDlJc_JDkndBTYqCpjYlwReEEilw/view?usp=sharing) for projection, and organize the dataset as follows
+
+```
+<scan_id>
+|-- meta_data.json      # camera parameters
+|-- transforms_video.json   # continuous camera parameters
+|-- video  # gt images under continuous camera parameters
+```
+
+Then just run the commond:
+```
+python edge_extraction/eval_ABC.py --render_mv True
+```
+
+### Replica-dataset
+
+```
+python edge_extraction/eval_replica.py
+```
+This is only for calculating the number of curves and visualization since GT curves are not availabel.
+
+
+
+
+
+
+
 
 
 ## 👀 Visual Results
@@ -89,13 +203,6 @@ You may also be interested in our other works:
 
 
 
-
-
-
-## 🚀 Usage
-
-
-
 ## 📚 Citation
 If you find our work helpful, please consider citing:
 ```bibtex
@@ -109,3 +216,10 @@ If you find our work helpful, please consider citing:
       url={https://arxiv.org/abs/2506.21401}, 
 }
 ```
+
+<!-- ## Contact
+If you encounter any issues, you can also contact Gao through gzrer2018@gmail.com. -->
+
+
+## Acknowledgement
+This project is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [EMAP](https://github.com/cvg/EMAP) and [NEF](https://github.com/yunfan1202/NEF_code). We use pretrained [DexiNed](https://github.com/xavysp/DexiNed) and [PidiNet](https://github.com/hellozhuo/pidinet) for edge map extraction. We thank all the authors for their great work and repos.
