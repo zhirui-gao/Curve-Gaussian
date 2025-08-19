@@ -61,7 +61,7 @@ You may also be interested in our other works:
 
 - [x] Release the training and evaluation code.
 - [x] Evaluation and visulization code.
-- [] Custom dataset support.
+- [ ] Custom dataset support.
 
 
 ## 🔧 Installation
