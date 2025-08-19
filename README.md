@@ -59,8 +59,8 @@ You may also be interested in our other works:
 
 ## 📋 TODO
 
-- [-] Release the training and evaluation code.
-- [-] Evaluation and visulization code.
+- [x] Release the training and evaluation code.
+- [x] Evaluation and visulization code.
 - [] Custom dataset support.
 
 
