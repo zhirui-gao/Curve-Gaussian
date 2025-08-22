@@ -49,7 +49,7 @@ class ModelParams(ParamGroup):
         self.sh_degree = 0
         self.n_gaussians = 12
         self._source_path = ""
-        self.detector = 'PidiNet'           #'DexiNed' or  'PidiNet'
+        self.detector = 'DexiNed'           #'DexiNed' or  'PidiNet'
         self._model_path = ""
         self._images = "images"
         self._depths = ""
