@@ -91,7 +91,8 @@ conda activate gaussian_splatting
 
 ## 📊 Dataset
 
-We use the dataset provided by [EMAP](https://github.com/cvg/EMAP/blob/main/scripts/download_data.py).
+For ABC_dataset, we use the dataset provided by [EMAP]([https://github.com/cvg/EMAP/blob/main/scripts/download_data.py](https://drive.google.com/file/d/17aUcCJCP5vgARs237H0BtlRoms5-CR6e/view)).
+For Replica dataset, download from[link](https://drive.google.com/file/d/1ZG2gdZpcNZovgw8oKZTPT9lHqII3LWyG/view?usp=sharing)
 
 Download datasets:
 ```
