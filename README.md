@@ -60,7 +60,7 @@ You may also be interested in our other works:
 ## 📋 TODO
 
 - [x] Release the training and evaluation code.
-- [x] Evaluation and visulization code.
+- [x] Evaluation and visualization code.
 - [ ] Custom dataset support.
 
 
@@ -69,11 +69,11 @@ You may also be interested in our other works:
 ```
 git clone --recurse-submodules https://github.com/zhirui-gao/Curve-Gaussian.git
 ```
-Our code environment list similar to 3DGS
+Our code environment is similar to 3DGS
 
-We make a custom rasterization libariry(diff-cur-rasterization) based on orginal [diff-gaussian-rasterization](https://github.com/graphdeco-inria/gaussian-splatting).
+We make a custom rasterization library (diff-cur-rasterization) based on original [diff-gaussian-rasterization](https://github.com/graphdeco-inria/gaussian-splatting).
 
-If you have a environment for 3DGS, you just run
+If you have an environment for 3DGS, you just run
 ```
 pip install  submodules/diff-cur-rasterization
 ```
@@ -91,7 +91,7 @@ conda activate gaussian_splatting
 
 ## 📊 Dataset
 
-For ABC_dataset, we use the dataset provided by [EMAP]([https://github.com/cvg/EMAP/blob/main/scripts/download_data.py](https://drive.google.com/file/d/17aUcCJCP5vgARs237H0BtlRoms5-CR6e/view)).  
+For ABC_dataset, we use the dataset provided by [EMAP](https://drive.google.com/file/d/17aUcCJCP5vgARs237H0BtlRoms5-CR6e/view).  
 
 For Replica dataset, download from [link](https://drive.google.com/file/d/1ZG2gdZpcNZovgw8oKZTPT9lHqII3LWyG/view?usp=sharing)
 
