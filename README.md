@@ -91,8 +91,9 @@ conda activate gaussian_splatting
 
 ## 📊 Dataset
 
-For ABC_dataset, we use the dataset provided by [EMAP]([https://github.com/cvg/EMAP/blob/main/scripts/download_data.py](https://drive.google.com/file/d/17aUcCJCP5vgARs237H0BtlRoms5-CR6e/view)).
-For Replica dataset, download from[link](https://drive.google.com/file/d/1ZG2gdZpcNZovgw8oKZTPT9lHqII3LWyG/view?usp=sharing)
+For ABC_dataset, we use the dataset provided by [EMAP]([https://github.com/cvg/EMAP/blob/main/scripts/download_data.py](https://drive.google.com/file/d/17aUcCJCP5vgARs237H0BtlRoms5-CR6e/view)).  
+
+For Replica dataset, download from [link](https://drive.google.com/file/d/1ZG2gdZpcNZovgw8oKZTPT9lHqII3LWyG/view?usp=sharing)
 
 Download datasets:
 ```
@@ -153,7 +154,7 @@ bash scripts/run_replica.sh
 python edge_extraction/eval_ABC.py
 ```
 
-If you want to render a continuous video of parametric curve:
+If you want to render a continuous video of parametric curves:
 
 First download [camera poses files](https://drive.google.com/file/d/1izmZaDlJc_JDkndBTYqCpjYlwReEEilw/view?usp=sharing) for projection, and organize the dataset as follows
 
@@ -164,7 +165,7 @@ First download [camera poses files](https://drive.google.com/file/d/1izmZaDlJc_J
 |-- video  # gt images under continuous camera parameters
 ```
 
-Then just run the commond:
+Then just run the command:
 ```
 python edge_extraction/eval_ABC.py --render_mv True
 ```
@@ -174,7 +175,7 @@ python edge_extraction/eval_ABC.py --render_mv True
 ```
 python edge_extraction/eval_replica.py
 ```
-This is only for calculating the number of curves and visualization since GT curves are not availabel.
+This is only for calculating the number of curves and visualization since GT curves are not available.
 
 
 
